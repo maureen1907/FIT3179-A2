@@ -22,7 +22,7 @@
             }
         },
         {
-            "calculate": "datum['2023'] === null ? -1 : datum['2023'] + 10",
+            "calculate": "datum['2023'] === null ? -1 : datum['2023']",
             "as": "Percentage of Seniors"
         },
         {
