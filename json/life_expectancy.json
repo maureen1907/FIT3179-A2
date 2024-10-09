@@ -1,0 +1,186 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
+
+        {"Year": 2000, "Life Expectancy": 82.24, "Sex": "F"},
+        {"Year": 2001, "Life Expectancy": 82.414, "Sex": "F"},
+        {"Year": 2002, "Life Expectancy": 82.588, "Sex": "F"},
+        {"Year": 2003, "Life Expectancy": 82.762, "Sex": "F"},
+        {"Year": 2004, "Life Expectancy": 82.936, "Sex": "F"},
+        {"Year": 2005, "Life Expectancy": 83.11, "Sex": "F"},
+        {"Year": 2006, "Life Expectancy": 83.284, "Sex": "F"},
+        {"Year": 2007, "Life Expectancy": 83.458, "Sex": "F"},
+        {"Year": 2008, "Life Expectancy": 83.632, "Sex": "F"},
+        {"Year": 2009, "Life Expectancy": 83.806, "Sex": "F"},
+        {"Year": 2010, "Life Expectancy": 83.98, "Sex": "F"},
+        {"Year": 2011, "Life Expectancy": 84.016, "Sex": "F"},
+        {"Year": 2012, "Life Expectancy": 84.052, "Sex": "F"},
+        {"Year": 2013, "Life Expectancy": 84.088, "Sex": "F"},
+        {"Year": 2014, "Life Expectancy": 84.124, "Sex": "F"},
+        {"Year": 2015, "Life Expectancy": 84.16, "Sex": "F"},
+        {"Year": 2016, "Life Expectancy": 84.33, "Sex": "F"},
+        {"Year": 2017, "Life Expectancy": 84.5, "Sex": "F"},
+        {"Year": 2018, "Life Expectancy": 84.67, "Sex": "F"},
+        {"Year": 2019, "Life Expectancy": 84.84, "Sex": "F"},
+        {"Year": 2020, "Life Expectancy": 84.865, "Sex": "F"},
+        {"Year": 2021, "Life Expectancy": 84.89, "Sex": "F"},
+
+        {"Year": 2000, "Life Expectancy": 79.69, "Sex": "T"},
+        {"Year": 2001, "Life Expectancy": 79.911, "Sex": "T"},
+        {"Year": 2002, "Life Expectancy": 80.132, "Sex": "T"},
+        {"Year": 2003, "Life Expectancy": 80.353, "Sex": "T"},
+        {"Year": 2004, "Life Expectancy": 80.574, "Sex": "T"},
+        {"Year": 2005, "Life Expectancy": 80.795, "Sex": "T"},
+        {"Year": 2006, "Life Expectancy": 81.016, "Sex": "T"},
+        {"Year": 2007, "Life Expectancy": 81.237, "Sex": "T"},
+        {"Year": 2008, "Life Expectancy": 81.458, "Sex": "T"},
+        {"Year": 2009, "Life Expectancy": 81.679, "Sex": "T"},
+        {"Year": 2010, "Life Expectancy": 81.9, "Sex": "T"},
+        {"Year": 2011, "Life Expectancy": 81.974, "Sex": "T"},
+        {"Year": 2012, "Life Expectancy": 82.048, "Sex": "T"},
+        {"Year": 2013, "Life Expectancy": 82.122, "Sex": "T"},
+        {"Year": 2014, "Life Expectancy": 82.196, "Sex": "T"},
+        {"Year": 2015, "Life Expectancy": 82.27, "Sex": "T"},
+        {"Year": 2016, "Life Expectancy": 82.4625, "Sex": "T"},
+        {"Year": 2017, "Life Expectancy": 82.655, "Sex": "T"},
+        {"Year": 2018, "Life Expectancy": 82.8475, "Sex": "T"},
+        {"Year": 2019, "Life Expectancy": 83.04, "Sex": "T"},
+        {"Year": 2020, "Life Expectancy": 83.07, "Sex": "T"},
+        {"Year": 2021, "Life Expectancy": 83.1, "Sex": "T"},
+        
+        {"Year": 2000, "Life Expectancy": 77.12, "Sex": "M"},
+        {"Year": 2001, "Life Expectancy": 77.391, "Sex": "M"},
+        {"Year": 2002, "Life Expectancy": 77.662, "Sex": "M"},
+        {"Year": 2003, "Life Expectancy": 77.933, "Sex": "M"},
+        {"Year": 2004, "Life Expectancy": 78.204, "Sex": "M"},
+        {"Year": 2005, "Life Expectancy": 78.475, "Sex": "M"},
+        {"Year": 2006, "Life Expectancy": 78.746, "Sex": "M"},
+        {"Year": 2007, "Life Expectancy": 79.017, "Sex": "M"},
+        {"Year": 2008, "Life Expectancy": 79.288, "Sex": "M"},
+        {"Year": 2009, "Life Expectancy": 79.559, "Sex": "M"},
+        {"Year": 2010, "Life Expectancy": 79.83, "Sex": "M"},
+        {"Year": 2011, "Life Expectancy": 79.944, "Sex": "M"},
+        {"Year": 2012, "Life Expectancy": 80.058, "Sex": "M"},
+        {"Year": 2013, "Life Expectancy": 80.172, "Sex": "M"},
+        {"Year": 2014, "Life Expectancy": 80.286, "Sex": "M"},
+        {"Year": 2015, "Life Expectancy": 80.4, "Sex": "M"},
+        {"Year": 2016, "Life Expectancy": 80.6125, "Sex": "M"},
+        {"Year": 2017, "Life Expectancy": 80.825, "Sex": "M"},
+        {"Year": 2018, "Life Expectancy": 81.0375, "Sex": "M"},
+        {"Year": 2019, "Life Expectancy": 81.25, "Sex": "M"},
+        {"Year": 2020, "Life Expectancy": 81.275, "Sex": "M"},
+        {"Year": 2021, "Life Expectancy": 81.3, "Sex": "M"}
+
+        
+      ]
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "line"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "axis": {
+                        "title": "Year",
+                        "format": "%Y",
+                        "tickCount": "year"
+                },
+                "scale": {"domain": [2000, 2021]}
+                },
+                "y": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative",
+                    "axis": {"title": "Life Expectancy"},
+                    "scale": {"domain": [75, 90]}
+                },
+                "color": {
+                    "field": "Sex",
+                    "type": "nominal",
+                    "scale": {"range": ["#1f77b4", "#ff7f0e", "#2ca02c"]}
+                }
+            },
+            "transform": [
+                {
+                    "filter": "datum.Year <= year_slider"
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": -30
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == year_slider"},
+                {"filter": "datum.Sex == 'F'"}
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 0
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == year_slider"},
+                {"filter": "datum.Sex == 'T'"}
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 25
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == year_slider"},
+                {"filter": "datum.Sex == 'M'"}
+            ]
+        }
+    ],
+    "params": [
+      {
+        "name": "year_slider",
+        "value": 2000,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2021,
+          "step": 1,
+          "name": "Year:"
+        }
+      }
+    ],
+    "config": {
+      "axis": {
+        "labelFontSize": 14,
+        "titleFontSize": 16
+      }
+    }
+}
