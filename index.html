@@ -13,26 +13,64 @@
 
     <!-- extensional JS file -->
     <script src="json/vega_lite_vis.js"></script>    
-
-    <title>Aging Demographic Choropleth Map</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <h1>Australia's Aging Demographic</h1>
-    <h2>Global Aging Population</h2>
-    <!-- div to hold the graph -->
-     <p> Like most developed countries, Australia's population is ageing as a result of sustained low fertility and increasing life expectancy. This has resulted in proportionally fewer children (under 15 years of age) in the population and a larger proportion of people aged 65 and over. </p>
-    <div id="chloro_map">
+<body style="background-color: aliceblue; max-width:min-content; margin:auto;">
+    <div style="background-color: rgb(255, 242, 242);">
+    <p style="align-content: center;"></p>
+    <div id="h1" style="color:rgb(52, 52, 120); padding:5px;" >Australia's Aging Demographic</div>    
+    <!-- <div id="h2" style="padding:25px;"> Aging Population</div> -->
+     <div style="padding: 1em;">
+     <p id="h3"> Australia, like many developed nations, is facing the challenges of an aging population. 
+        This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
+        As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
+        This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face. </p>
+    </div>
+    <p style="padding:5px"></p>
     </div>
 
-    <h2>Life Expectancy</h2>
-    <p> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
+    <div id="chloro_map"></div>
+    <div id="overtake_chart"></div>
+
+    <div id="h2">Life Expectancy</div>
+    <p id="h3"> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
     <div id="life_expectancy">
     </div>
 
-    <p>There are twice as many women as men aged 85 years and over, reflecting their longer life expectancy. It is estimated that the number of Australians aged 85 and over will increase from 400,000 in 2010 to 1.8 million by 2050.</p>
-    <div id="pop_pyramid">
+    <p id="h3">There are twice as many women as men aged 85 years and over, reflecting their longer life expectancy. It is estimated that the number of Australians aged 85 and over will increase from 400,000 in 2010 to 1.8 million by 2050.</p>
+    <div id="pop_pyramid"></div>
+
+    <!-- Fertility -->
+    <div id="h2">Fertility Rate</div>
+    <p id="h3">One of the primary drivers of an aging population is declining fertility rates. 
+        Over the past several decades, Australia has experienced a steady decline in the number of births per woman. 
+        In the 1960s, the fertility rate was around 3.5 children per woman, but today it is closer to 1.6. 
+        This means fewer young people are entering the population, while older generations continue to grow. 
+        Lower fertility rates reduce the size of future working-age cohorts, exacerbating the imbalance between the elderly and the workforce.</p>
+
+    <div id="fert_rate"></div>
+    
+    
+    <div>
+    <p id="h2">Migration</p>
+    <p id="h3">Migration plays a critical role in Australia's population dynamics. 
+        Historically, Australia has relied on immigration to help maintain a balanced age structure. 
+        Younger immigrants contribute to the labor market, helping to support the aging population. 
+        However, migration alone cannot fully offset the effects of low fertility rates and longer life expectancy. 
+        While immigration can slow the aging trend, the country still faces long-term challenges in sustaining economic growth and providing social services for an older population.</p>
+    <!-- <div id="migration"></div> -->
+    </div>
+
+    <div>
+        <p id="h2">Economic Impact</p>
+        <p id="h3">The aging population has significant economic implications for Australia. 
+            As the proportion of older individuals increases, there are fewer people in the workforce to support them. 
+            This can lead to labor shortages, reduced productivity, and increased pressure on social welfare programs. 
+            Additionally, an aging population may require increased healthcare services and long-term care, placing further strain on the economy. 
+            Addressing these challenges will require innovative policies and strategies to support the aging population while maintaining economic growth and sustainability.</p>
+        <!-- <div id="economic_impact"></div> -->
+    </div>
 
 </body>
 </html>

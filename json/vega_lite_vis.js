@@ -1,11 +1,14 @@
-var vg_1 = "json/chloro_map.vega.json";
+var vg_1 = "json/chloro_map/chloro_map.vega.json";
 var vg_2 = "json/life_expectancy.json";
 var vg_3 = "json/female_to_male.json";
+var vg_4 = "json/fert_rate.json";
+var vg_5 = "json/65_overtake.json";
 
-vegaEmbed("#chloro_map", vg_1).then(function(result) {
+
+vegaEmbed("#chloro_map", vg_1, {renderer: "svg", actions: false}).then(function(result) {
 }).catch(console.error);
 
-vegaEmbed("#life_expectancy", vg_2).then(function(result) {
+vegaEmbed("#life_expectancy", vg_2, {renderer: "svg", actions: false}).then(function(result) {
   let playing = false;
   let year = 2000;
 
@@ -40,5 +43,11 @@ vegaEmbed("#life_expectancy", vg_2).then(function(result) {
       }
     }).catch(console.error);
 
-    vegaEmbed("#pop_pyramid", vg_3).then(function(result) {
+    vegaEmbed("#pop_pyramid", vg_3, {renderer: "svg", actions: false}).then(function(result) {
+    }).catch(console.error);
+
+    vegaEmbed("#fert_rate", vg_4, {renderer: "svg", actions: false}).then(function(result) {
+    }).catch(console.error);
+    
+    vegaEmbed("#overtake_chart", vg_5, {renderer: "svg", actions: false}).then(function(result) {
     }).catch(console.error);

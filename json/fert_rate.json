@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple line chart showing the fertility rate over time.",
+    "data": {
+        "url": "data/fertility_rate.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "mark": "line",
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "quantitative", 
+            "axis": {
+                "title": "Year"
+            }
+        },
+        "y": {
+            "field": "Fertility Rate",
+            "type": "quantitative",
+            "axis": {
+                "title": "Fertility Rate"
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A line chart showing the population of '20 and under' and '65 and over' over time.",
+    "data": {
+        "url": "data/65_overtake.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "transform": [
+        {
+            "fold": ["20 and under", "65 and over"],
+            "as": ["Age Group", "Population"]
+        }
+    ],
+    "mark": "line",
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "ordinal",
+            "axis": {
+                "title": "Year"
+            }
+        },
+        "y": {
+            "field": "Population",
+            "type": "quantitative",
+            "axis": {
+                "title": "Population"
+            }
+        },
+        "color": {
+            "field": "Age Group",
+            "type": "nominal",
+            "scale": {
+                "range": ["#1f77b4", "#ff7f0e"]
+            }
+        }
+    }
+}
