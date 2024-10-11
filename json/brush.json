@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "data/65_overtake.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "vconcat": [
+        {
+            "width": "container",
+            "height": 400,
+            "layer": [
+                {
+                    "transform": [
+                        {
+                            "fold": ["20 and under", "65 and over"],
+                            "as": ["Age Group", "Population"]
+                        }
+                    ],
+                    "mark": "line",
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "ordinal",
+                            "axis": {
+                                "title": "Year",
+                                "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
+                                "labelOverlap": "parity"
+                            }
+                        },
+                        "y": {
+                            "field": "Population",
+                            "type": "quantitative",
+                            "axis": {
+                                "title": "Population"
+                            }
+                        },
+                        "color": {
+                            "field": "Age Group",
+                            "type": "nominal",
+                            "scale": {
+                                "range": ["#1f77b4", "#ff7f0e"]
+                            }
+                        }
+                    }
+                },
+                {
+                    "transform": [
+                        {
+                            "filter": {
+                                "param": "time_brush"
+                            }
+                        },
+                        {
+                            "fold": ["20 and under", "65 and over"],
+                            "as": ["Age Group", "Population"]
+                        }
+                    ],
+                    "mark": "line",
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "ordinal",
+                            "axis": {
+                                "title": "Year",
+                                "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
+                                "labelOverlap": "parity"
+                            }
+                        },
+                        "y": {
+                            "field": "Population",
+                            "type": "quantitative",
+                            "axis": {
+                                "title": "Population"
+                            }
+                        },
+                        "color": {
+                            "field": "Age Group",
+                            "type": "nominal",
+                            "scale": {
+                                "range": ["#1f77b4", "#ff7f0e"]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

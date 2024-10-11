@@ -1,9 +1,128 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A line chart showing the population of '20 and under' and '65 and over' over time.",
-    "width": 1000,
-    "layer": [
+    "vconcat": [
         {
+            "width": 1110,
+            "layer": [
+                {
+                    "params": [{
+                        "name": "brush",
+                        "select": {"type": "interval", "encodings": ["x"]}
+                    }],
+                    "data": {
+                        "url": "data/65_overtake.csv",
+                        "format": {
+                            "type": "csv"
+                        }
+                    },
+                    "transform": [
+                        {
+                            "fold": ["20 and under", "65 and over"],
+                            "as": ["Age Group", "Population"]
+                        }
+                    ],
+                    "mark": "line",
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "ordinal",
+                            "axis": {
+                                "title": "Year",
+                                "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
+                                "labelOverlap": "parity"
+                            }
+                        },
+                        "y": {
+                            "field": "Population",
+                            "type": "quantitative",
+                            "axis": {
+                                "title": "Population"
+                            }
+                        },
+                        "color": {
+                            "field": "Age Group",
+                            "type": "nominal",
+                            "scale": {
+                                "range": ["#1f77b4", "#ff7f0e"]
+                            }
+                        },
+                        "tooltip": [
+                            {"field": "Year", "type": "ordinal"},
+                            {
+                                "field": "Age Group",
+                                "type": "nominal",
+                                "title": "Age Group"
+                            },
+                            {
+                                "field": "Population",
+                                "type": "quantitative",
+                                "title": "Population"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "data": {
+                        "values": [{"Year": 2048}]  
+                    },
+                    "mark": "rule",
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "ordinal"
+                        },
+                        "color": {
+                            "value": "red"
+                        },
+                        "size": {
+                            "value": 2
+                        },
+                        "strokeDash": {
+                            "value": [5, 5]
+                        }
+                    }
+                },
+                {
+                    "data": {
+                        "values": [{"Year": 2059, "text": "In 2048, older people overtake younger people"}]  
+                    },
+                    "mark": "text",
+                    "encoding": {
+                        "x": {
+                            "field": "Year",
+                            "type": "ordinal"
+                        },
+                        "y": {
+                            "value": 100  
+                        },
+                        "text": {
+                            "field": "text"
+                        },
+                        "color": {
+                            "value": "black"  
+                        },
+                        "size": {
+                            "value": 16
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "width": 800,
+            "height": 100,
+            "mark": "circle",
+            "title": "Use this line chart to filter out the data based on time",
+            "params": [
+                {
+                    "name": "brush",
+                    "select": {
+                        "type": "interval",
+                        "encodings": ["x"]
+                    }
+                }
+            ],
             "data": {
                 "url": "data/65_overtake.csv",
                 "format": {
@@ -12,27 +131,24 @@
             },
             "transform": [
                 {
+                    "filter": {"param": "brush"}
+                },
+                {
                     "fold": ["20 and under", "65 and over"],
                     "as": ["Age Group", "Population"]
                 }
             ],
-            "mark": "line",
             "encoding": {
                 "x": {
                     "field": "Year",
                     "type": "ordinal",
-                    "axis": {
-                        "title": "Year",
-                        "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
-                        "labelOverlap": "parity"
-                    }
+                    "title": "Year",
+                    "scale": {"domain": {"param": "brush"}}
                 },
                 "y": {
                     "field": "Population",
                     "type": "quantitative",
-                    "axis": {
-                        "title": "Population"
-                    }
+                    "title": "Count of Ages"
                 },
                 "color": {
                     "field": "Age Group",
@@ -40,53 +156,41 @@
                     "scale": {
                         "range": ["#1f77b4", "#ff7f0e"]
                     }
-                }
-            }
-        },
-        {
-            "data": {
-                "values": [{"Year": 2048}]  
-            },
-            "mark": "rule",
-            "encoding": {
-                "x": {
-                    "field": "Year",
-                    "type": "ordinal"
                 },
-                "color": {
-                    "value": "red"
-                },
-                "size": {
-                    "value": 2
-                },
-                "strokeDash": {
-                    "value": [5, 5]
-                }
-            }
-        },
-        {
-            "data": {
-                "values": [{"Year": 2059, "text": "In 2048, older people overtake younger people"}]  
-            },
-            "mark": "text",
-            "encoding": {
-                "x": {
-                    "field": "Year",
-                    "type": "ordinal"
-                },
-                "y": {
-                    "value": 100  
-                },
-                "text": {
-                    "field": "text"
-                },
-                "color": {
-                    "value": "black"  
-                },
-                "size": {
-                    "value": 16
+                "tooltip": [
+                    {"field": "Year", "type": "ordinal"},
+                    {
+                        "field": "Age Group",
+                        "type": "nominal",
+                        "title": "Age Group"
+                    },
+                    {
+                        "field": "Population",
+                        "type": "quantitative",
+                        "title": "Population"
+                    }
+                ]
             }
         }
+    ],
+    "config": {
+        "axis": {
+            "labelFontSize": 10,
+            "titleFontSize": 16
+        },
+        "title": {
+            "fontSize": 20
+        },
+        "circle": {
+            "size": 100
+        },
+        "line": {
+            "point": "transparent",
+            "tooltip": true,
+            "size": 2
+        },
+        "point": {
+            "size": 50
+        }
     }
-    ]
 }
