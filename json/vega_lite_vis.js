@@ -5,8 +5,12 @@ var vg_4 = "json/fert_rate.json";
 var vg_5 = "json/65_overtake.json";
 
 
-vegaEmbed("#chloro_map", vg_1, {renderer: "svg", actions: false}).then(function(result) {
-}).catch(console.error);
+vegaEmbed("#chloro_map", vg_1, {
+  width: 600,
+  height: 400,
+  renderer: "svg", 
+  actions: false
+}).then(function(result) {}).catch(console.error);
 
 vegaEmbed("#life_expectancy", vg_2, {renderer: "svg", actions: false}).then(function(result) {
   let playing = false;
@@ -49,5 +53,9 @@ vegaEmbed("#life_expectancy", vg_2, {renderer: "svg", actions: false}).then(func
     vegaEmbed("#fert_rate", vg_4, {renderer: "svg", actions: false}).then(function(result) {
     }).catch(console.error);
     
-    vegaEmbed("#overtake_chart", vg_5, {renderer: "svg", actions: false}).then(function(result) {
-    }).catch(console.error);
+    vegaEmbed("#overtake_chart", vg_5, {
+      height: 300,
+      width: 1180,
+      renderer: "svg", 
+      actions: false
+    }).then(function(result) {}).catch(console.error);

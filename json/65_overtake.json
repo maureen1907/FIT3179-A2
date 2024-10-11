@@ -1,40 +1,92 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A line chart showing the population of '20 and under' and '65 and over' over time.",
-    "data": {
-        "url": "data/65_overtake.csv",
-        "format": {
-            "type": "csv"
-        }
-    },
-    "transform": [
+    "width": 1000,
+    "layer": [
         {
-            "fold": ["20 and under", "65 and over"],
-            "as": ["Age Group", "Population"]
-        }
-    ],
-    "mark": "line",
-    "encoding": {
-        "x": {
-            "field": "Year",
-            "type": "ordinal",
-            "axis": {
-                "title": "Year"
+            "data": {
+                "url": "data/65_overtake.csv",
+                "format": {
+                    "type": "csv"
+                }
+            },
+            "transform": [
+                {
+                    "fold": ["20 and under", "65 and over"],
+                    "as": ["Age Group", "Population"]
+                }
+            ],
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "ordinal",
+                    "axis": {
+                        "title": "Year",
+                        "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
+                        "labelOverlap": "parity"
+                    }
+                },
+                "y": {
+                    "field": "Population",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": "Population"
+                    }
+                },
+                "color": {
+                    "field": "Age Group",
+                    "type": "nominal",
+                    "scale": {
+                        "range": ["#1f77b4", "#ff7f0e"]
+                    }
+                }
             }
         },
-        "y": {
-            "field": "Population",
-            "type": "quantitative",
-            "axis": {
-                "title": "Population"
+        {
+            "data": {
+                "values": [{"Year": 2048}]  
+            },
+            "mark": "rule",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "ordinal"
+                },
+                "color": {
+                    "value": "red"
+                },
+                "size": {
+                    "value": 2
+                },
+                "strokeDash": {
+                    "value": [5, 5]
+                }
             }
         },
-        "color": {
-            "field": "Age Group",
-            "type": "nominal",
-            "scale": {
-                "range": ["#1f77b4", "#ff7f0e"]
+        {
+            "data": {
+                "values": [{"Year": 2059, "text": "In 2048, older people overtake younger people"}]  
+            },
+            "mark": "text",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "value": 100  
+                },
+                "text": {
+                    "field": "text"
+                },
+                "color": {
+                    "value": "black"  
+                },
+                "size": {
+                    "value": 16
             }
         }
     }
+    ]
 }

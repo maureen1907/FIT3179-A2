@@ -31,7 +31,7 @@
                 "as": "Percentage of Seniors"
             },
             {
-                "calculate": "datum['Percentage of Seniors'] === -1 ? 'N/A' : datum['2023']",
+                "calculate": "datum['Percentage of Seniors'] === -1 ? 'N/A' : format(datum['2023'], '.2f') + '%'",
                 "as": "Tooltip Value"
             }
         ],

@@ -16,22 +16,27 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="background-color: aliceblue; max-width:min-content; margin:auto;">
-    <div style="background-color: rgb(255, 242, 242);">
-    <p style="align-content: center;"></p>
-    <div id="h1" style="color:rgb(52, 52, 120); padding:5px;" >Australia's Aging Demographic</div>    
-    <!-- <div id="h2" style="padding:25px;"> Aging Population</div> -->
-     <div style="padding: 1em;">
-     <p id="h3"> Australia, like many developed nations, is facing the challenges of an aging population. 
-        This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
-        As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
-        This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face. </p>
+<body style="background-color: aliceblue; ">
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div id="h1" style="background-color:aqua; color:rgb(52, 52, 120); padding: 1em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
+            Australia's Aging Demographic
+        </div> 
     </div>
-    <p style="padding:5px"></p>
+    <div style="background-color:beige; display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; gap: 5%;padding-top:1em; padding-bottom: 1em;">
+        <div style="background-color: rgb(255, 242, 242); margin-left: 5%;">
+            <div style="padding: 1em;">
+            <p id="h3"> Australia, like many developed nations, is facing the challenges of an aging population. 
+                This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
+                As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
+                This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face. </p>
+            </div>
+        </div>
+        <div id="chloro_map" style="margin-right: 5%; "></div>
     </div>
-
-    <div id="chloro_map"></div>
-    <div id="overtake_chart"></div>
+    <div style="display: flex;">
+        <div id="overtake_chart" style="margin-left: 5%; margin-right: 5%;"></div>
+    </div>
+    
 
     <div id="h2">Life Expectancy</div>
     <p id="h3"> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
