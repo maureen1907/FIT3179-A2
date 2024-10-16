@@ -1,15 +1,21 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A line chart showing the population of '20 and under' and '65 and over' over time.",
     "vconcat": [
         {
             "width": 700,
+            "title": {
+                "text": "Population of People Aged 20 and Under and 65 and Over by Year",
+                "fontSize": 20,
+                "font": "Amiko"
+            },
             "layer": [
                 {
-                    "params": [{
-                        "name": "brush",
-                        "select": {"type": "interval", "encodings": ["x"]}
-                    }],
+                    "params": [
+                        {
+                            "name": "brush",
+                            "select": {"type": "interval", "encodings": ["x"]}
+                        }
+                    ],
                     "data": {
                         "url": "data/65_overtake.csv",
                         "format": {
@@ -117,7 +123,11 @@
             "align": "all",
             "center": true,
             "mark": "circle",
-            "title": "Use this line chart to filter out the data based on time",
+            "title": {
+                "text": "Use this line chart to filter out the data based on time",
+                "fontSize": 16,
+                "font": "Amiko"
+            },
             "params": [
                 {
                     "name": "brush",
@@ -148,13 +158,15 @@
                     "type": "ordinal",
                     "title": "Year",
                     "scale": {
-                        "domain":{
-                            "param": "brush"}}
+                        "domain": {
+                            "param": "brush"
+                        }
+                    }
                 },
                 "y": {
                     "field": "Population",
                     "type": "quantitative",
-                    "title": "Count of Ages",
+                    "title": "Population",
                     "axis": {
                         "titleFont": "Amiko",
                         "labelFont": "Amiko"
@@ -190,7 +202,8 @@
             "titleFontSize": 16
         },
         "title": {
-            "fontSize": 20
+            "fontSize": 20,
+            "font": "Amiko"
         },
         "circle": {
             "size": 100
@@ -204,13 +217,12 @@
             "size": 50
         },
         "legend": {
-        "titleFont": "Amiko",
-        "labelFont": "Amiko",
-        "titleFontSize": 16,
-        "labelFontSize": 14,
-        "symbolSize": 100,
-        "symbolStrokeWidth": 3
-
-      }
+            "titleFont": "Amiko",
+            "labelFont": "Amiko",
+            "titleFontSize": 16,
+            "labelFontSize": 14,
+            "symbolSize": 100,
+            "symbolStrokeWidth": 3
+        }
     }
 }
