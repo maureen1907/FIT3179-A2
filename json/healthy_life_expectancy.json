@@ -1,0 +1,198 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{
+        "text": "Healthy Life Expectancy by Year and Sex",
+        "fontSize": 20,
+        "anchor": "start"
+    },
+    "data": {
+        
+            "values": [
+              {"Year": 2000, "Life Expectancy": 69.973040, "Sex": "F"},
+              {"Year": 2001, "Life Expectancy": 70.094596, "Sex": "F"},
+              {"Year": 2002, "Life Expectancy": 70.216152, "Sex": "F"},
+              {"Year": 2003, "Life Expectancy": 70.337708, "Sex": "F"},
+              {"Year": 2004, "Life Expectancy": 70.459264, "Sex": "F"},
+              {"Year": 2005, "Life Expectancy": 70.580820, "Sex": "F"},
+              {"Year": 2006, "Life Expectancy": 70.702376, "Sex": "F"},
+              {"Year": 2007, "Life Expectancy": 70.823932, "Sex": "F"},
+              {"Year": 2008, "Life Expectancy": 70.945488, "Sex": "F"},
+              {"Year": 2009, "Life Expectancy": 71.067044, "Sex": "F"},
+              {"Year": 2010, "Life Expectancy": 71.188600, "Sex": "F"},
+              {"Year": 2011, "Life Expectancy": 71.231162, "Sex": "F"},
+              {"Year": 2012, "Life Expectancy": 71.273724, "Sex": "F"},
+              {"Year": 2013, "Life Expectancy": 71.316286, "Sex": "F"},
+              {"Year": 2014, "Life Expectancy": 71.358848, "Sex": "F"},
+              {"Year": 2015, "Life Expectancy": 71.401410, "Sex": "F"},
+              {"Year": 2016, "Life Expectancy": 71.483738, "Sex": "F"},
+              {"Year": 2017, "Life Expectancy": 71.566065, "Sex": "F"},
+              {"Year": 2018, "Life Expectancy": 71.648393, "Sex": "F"},
+              {"Year": 2019, "Life Expectancy": 71.730720, "Sex": "F"},
+              {"Year": 2020, "Life Expectancy": 71.407024, "Sex": "F"},
+              {"Year": 2021, "Life Expectancy": 71.083328, "Sex": "F"},
+              
+              {"Year": 2000, "Life Expectancy": 67.164240, "Sex": "M"},
+              {"Year": 2001, "Life Expectancy": 67.364047, "Sex": "M"},
+              {"Year": 2002, "Life Expectancy": 67.563854, "Sex": "M"},
+              {"Year": 2003, "Life Expectancy": 67.763661, "Sex": "M"},
+              {"Year": 2004, "Life Expectancy": 67.963468, "Sex": "M"},
+              {"Year": 2005, "Life Expectancy": 68.163275, "Sex": "M"},
+              {"Year": 2006, "Life Expectancy": 68.363082, "Sex": "M"},
+              {"Year": 2007, "Life Expectancy": 68.562889, "Sex": "M"},
+              {"Year": 2008, "Life Expectancy": 68.762696, "Sex": "M"},
+              {"Year": 2009, "Life Expectancy": 68.962503, "Sex": "M"},
+              {"Year": 2010, "Life Expectancy": 69.162310, "Sex": "M"},
+              {"Year": 2011, "Life Expectancy": 69.278178, "Sex": "M"},
+              {"Year": 2012, "Life Expectancy": 69.394046, "Sex": "M"},
+              {"Year": 2013, "Life Expectancy": 69.509914, "Sex": "M"},
+              {"Year": 2014, "Life Expectancy": 69.625782, "Sex": "M"},
+              {"Year": 2015, "Life Expectancy": 69.741650, "Sex": "M"},
+              {"Year": 2016, "Life Expectancy": 69.844025, "Sex": "M"},
+              {"Year": 2017, "Life Expectancy": 69.946400, "Sex": "M"},
+              {"Year": 2018, "Life Expectancy": 70.048775, "Sex": "M"},
+              {"Year": 2019, "Life Expectancy": 70.151150, "Sex": "M"},
+              {"Year": 2020, "Life Expectancy": 70.140444, "Sex": "M"},
+              {"Year": 2021, "Life Expectancy": 70.129738, "Sex": "M"},
+              
+              {"Year": 2000, "Life Expectancy": 68.572650, "Sex": "T"},
+              {"Year": 2001, "Life Expectancy": 68.732090, "Sex": "T"},
+              {"Year": 2002, "Life Expectancy": 68.891530, "Sex": "T"},
+              {"Year": 2003, "Life Expectancy": 69.050970, "Sex": "T"},
+              {"Year": 2004, "Life Expectancy": 69.210410, "Sex": "T"},
+              {"Year": 2005, "Life Expectancy": 69.369850, "Sex": "T"},
+              {"Year": 2006, "Life Expectancy": 69.529290, "Sex": "T"},
+              {"Year": 2007, "Life Expectancy": 69.688730, "Sex": "T"},
+              {"Year": 2008, "Life Expectancy": 69.848170, "Sex": "T"},
+              {"Year": 2009, "Life Expectancy": 70.007610, "Sex": "T"},
+              {"Year": 2010, "Life Expectancy": 70.167050, "Sex": "T"},
+              {"Year": 2011, "Life Expectancy": 70.245898, "Sex": "T"},
+              {"Year": 2012, "Life Expectancy": 70.324746, "Sex": "T"},
+              {"Year": 2013, "Life Expectancy": 70.403594, "Sex": "T"},
+              {"Year": 2014, "Life Expectancy": 70.482442, "Sex": "T"},
+              {"Year": 2015, "Life Expectancy": 70.561290, "Sex": "T"},
+              {"Year": 2016, "Life Expectancy": 70.654480, "Sex": "T"},
+              {"Year": 2017, "Life Expectancy": 70.747670, "Sex": "T"},
+              {"Year": 2018, "Life Expectancy": 70.840860, "Sex": "T"},
+              {"Year": 2019, "Life Expectancy": 70.934050, "Sex": "T"},
+              {"Year": 2020, "Life Expectancy": 70.770206, "Sex": "T"},
+              {"Year": 2021, "Life Expectancy": 70.606361, "Sex": "T"}
+            ]
+          },
+    "layer": [
+        {
+            "mark": {
+                "type": "line"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "axis": {
+                        "title": "Year",
+                        "format": "%Y",
+                        "tickCount": "year",
+                        "titleFont": "Amiko",
+                        "labelFont": "Amiko"
+                },
+                "scale": {"domain": [2000, 2021]}
+                },
+                "y": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": "Healthy Life Expectancy",
+                        "titleFont": "Amiko",
+                        "labelFont": "Amiko"
+                    },
+                    "scale": {"domain": [60, 80]}
+                    
+                },
+                "color": {
+                    "field": "Sex",
+                    "type": "nominal",
+                    "scale": {"range": ["#1f77b4", "#ff7f0e", "#2ca02c"]}
+                }
+            },
+            "transform": [
+                {
+                    "filter": "datum.Year <= Year"
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": -30
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Sex == 'F'"}
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 0
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Sex == 'T'"}
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 25
+            },
+            "encoding": {
+                "text": {
+                    "field": "Life Expectancy",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Sex == 'M'"}
+            ]
+        }
+    ],
+    "params": [
+      {
+        "name": "Year",
+        "value": 2000,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2021,
+          "step": 1
+        }
+      }
+    ],
+    "config": {
+      "axis": {
+        "labelFontSize": 14,
+        "titleFontSize": 16
+      },
+      "text":{
+        "font": "Amiko"
+      }
+    }
+}

@@ -3,7 +3,7 @@
     "description": "A line chart showing the population of '20 and under' and '65 and over' over time.",
     "vconcat": [
         {
-            "width": 1110,
+            "width": 700,
             "layer": [
                 {
                     "params": [{
@@ -110,8 +110,10 @@
             ]
         },
         {
-            "width": 800,
-            "height": 100,
+            "width": 700,
+            "height": 200,
+            "align": "all",
+            "center": true,
             "mark": "circle",
             "title": "Use this line chart to filter out the data based on time",
             "params": [

@@ -1,268 +1,235 @@
-Country,2023
-Aruba,16.8559519
-Africa Eastern and Southern,3.158468881
-Afghanistan,2.395139671
-Central African Rep.,2.884924144
-Angola,2.624500287
-Albania,17.11452568
-Andorra,15.54789731
-Arab World,4.654688347
-United Arab Emirates,1.865565899
-Argentina,12.05958402
-Armenia,13.69915555
-American Samoa,7.689942957
-Antigua and Barbuda,11.117415
-Australia,17.23455041
-Austria,20.20996744
-Azerbaijan,7.615322572
-Burundi,2.490788461
-Belgium,20.09262682
-Benin,3.067263004
-Burkina Faso,2.531638302
-Bangladesh,6.265958585
-Bulgaria,22.30411365
-Bahrain,4.027877304
-Bahamas,9.284008303
-Bosnia and Herz.,18.652225
-Belarus,17.65608527
-Belize,5.245907625
-Bermuda,21.22477329
-Bolivia,4.878117097
-Brazil,10.2123654
-Barbados,16.81427541
-Brunei,6.554024266
-Bhutan,6.377500319
-Botswana,3.767092374
-Central African Republic,2.524295295
-Canada,19.54574927
-Central Europe and the Baltics,19.43763701
-Switzerland,19.66522214
-Channel Islands,16.64932006
-Chile,13.47095889
-China,14.26661153
-Taiwan, 18.35187298
-Côte d'Ivoire,2.40423127
-Cameroon,2.651290647
-Dem. Rep. Congo,2.890127939
-Congo,2.779271997
-Colombia,9.370067784
-Comoros,4.295161811
-Cabo Verde,5.73351128
-Costa Rica,11.20371484
-Caribbean small states,8.56891337
-Cuba,16.10441925
-Curacao,15.36519208
-Cayman Islands,8.530515077
-Cyprus,15.20083515
-Czechia,20.78759578
-Germany,22.7469231
-Djibouti,4.593584697
-Dominica,9.819961665
-Denmark,20.71910888
-Dominican Rep.,7.674301689
-Algeria,6.608498325
-East Asia & Pacific (excluding high income),12.18668047
-Early-demographic dividend,6.494082271
-East Asia & Pacific,13.41238667
-Europe & Central Asia (excluding high income),10.646463
-Europe & Central Asia,17.58973455
-Ecuador,8.075774674
-Egypt,4.911355181
-Euro area,22.11968864
-Eritrea,4.03310143
-Spain,20.73578123
-Estonia,20.90514154
-Ethiopia,3.157747837
-European Union,21.53317643
-Fragile and conflict affected situations,4.031954378
-Finland,23.61767239
-Fiji,6.095257725
-France,21.99996297
-Faroe Islands,17.95305006
-"Micronesia, Fed. Sts.",6.394501146
-Gabon,3.892177784
-United Kingdom,19.45825771
-Georgia,14.74246047
-Ghana,3.649468224
-Gibraltar,21.27965492
-Guinea,3.309184269
-Gambia,2.437735471
-Guinea-Bissau,2.835982373
-Eq. Guinea,3.118060806
-Greece,23.14910431
-Grenada,10.33851494
-Greenland,10.64120898
-Guatemala,4.934071508
-Guam,12.27363662
-Guyana,6.466613585
-High income,19.24686736
-"Hong Kong SAR, China",21.37368764
-Honduras,4.379779565
-Heavily indebted poor countries (HIPC),2.922638162
-Croatia,22.74943238
-Haiti,4.606527884
-Hungary,19.74618754
-IBRD only,10.08336533
-IDA & IBRD total,8.35397525
-IDA total,3.818961556
-IDA blend,3.658269875
-Indonesia,7.024628656
-IDA only,3.898348277
-Isle of Man,22.69271633
-India,7.072109453
-Ireland,15.48454899
-Iran,7.934023175
-Iraq,3.389042768
-Iceland,15.73863265
-Israel,12.17118237
-Italy,24.46030489
-Jamaica,7.751800671
-Jordan,3.977916659
-Japan,30.06763042
-Kazakhstan,8.19124813
-Kenya,2.907221323
-Kyrgyzstan,4.745456712
-Cambodia,6.116837671
-Kiribati,3.902183275
-St. Kitts and Nevis,10.59470213
-South Korea,18.37839131
-Kuwait,5.444748188
-Latin America & Caribbean (excluding high income),9.233399829
-Laos,4.577104248
-Lebanon,10.28124296
-Liberia,3.293025134
-Libya,4.969965397
-St. Lucia,9.494260781
-Latin America & Caribbean,9.452278893
-Least developed countries: UN classification,3.702122043
-Low income,3.188250142
-Liechtenstein,20.02804128
-Sri Lanka,11.91670626
-Lower middle income,5.921616498
-Low & middle income,8.077907638
-Lesotho,4.219618142
-Late-demographic dividend,13.36575888
-Lithuania,21.21979074
-Luxembourg,15.35354152
-Latvia,22.24122731
-"Macao SAR, China",13.6644278
-St. Martin (French part),11.77011566
-Morocco,8.028464502
-Monaco,35.79172119
-Moldova,12.6559148
-Madagascar,3.4047653
-Maldives,5.106411156
-Middle East & North Africa,5.596408605
-Mexico,8.588024093
-Marshall Islands,4.750452424
-Middle income,8.680131202
-Macedonia,15.13193066
-Mali,2.336037362
-Malta,19.57726592
-Myanmar,7.033540458
-Middle East & North Africa (excluding high income),5.792377382
-Montenegro,16.91103291
-Mongolia,4.847386534
-Northern Mariana Islands,11.7961282
-Mozambique,2.571485373
-Mauritania,3.208356343
-Mauritius,13.30591431
-Malawi,2.540544745
-Malaysia,7.78656471
-North America,17.79783821
-Namibia,3.933188745
-New Caledonia,11.39505992
-Niger,2.398058174
-Nigeria,2.985719706
-Nicaragua,5.440918336
-Netherlands,20.73375587
-Norway,18.74470258
-Nepal,6.171396261
-Nauru,2.660406886
-New Zealand,16.72817245
-OECD members,18.3318524
-Oman,2.805377419
-Other small states,9.504955555
-Pakistan,4.34670787
-Panama,9.010098618
-Peru,8.572472947
-Philippines,5.605148737
-Palau,10.25612626
-Papua New Guinea,3.293182853
-Poland,18.53092549
-Pre-demographic dividend,2.817031572
-Puerto Rico,23.36521881
-"Korea, Dem. People's Rep.",12.1931301
-Portugal,23.30439161
-Paraguay,6.364606927
-West Bank and Gaza,3.593329647
-Pacific island small states,4.923297039
-Post-demographic dividend,20.83780192
-French Polynesia,10.60878067
-Qatar,1.611365963
-Romania,18.46014279
-Russia,16.16057952
-Rwanda,3.270421194
-South Asia,6.600085662
-Saudi Arabia,3.051148232
-Sudan,3.571417584
-Senegal,3.135618358
-Singapore,16.12603772
-Solomon Is.,3.495967516
-Sierra Leone,3.153538832
-El Salvador,8.362007984
-San Marino,20.91879199
-Somalia,2.553220725
-Somaliland, null
-Serbia,20.47635803
-Sub-Saharan Africa (excluding high income),3.047197461
-S. Sudan,2.941676445
-Sub-Saharan Africa,3.047722713
-Small states,8.74654583
-Sao Tome and Principe,3.777137053
-Suriname,7.5870075
-Slovakia,16.94211018
-Slovenia,21.41935
-Sweden,20.42649767
-eSwatini,4.017231276
-Sint Maarten (Dutch part),11.68196825
-Seychelles,8.493405164
-Syria,4.719672635
-Turks and Caicos Islands,10.53374293
-Chad,2.005947676
-East Asia & Pacific (IDA & IBRD countries),12.1865261
-Europe & Central Asia (IDA & IBRD countries),13.60456845
-Togo,3.174181357
-Thailand,15.95805626
-Tajikistan,3.643633196
-Turkmenistan,5.406408741
-Latin America & the Caribbean (IDA & IBRD countries),9.264162375
-Timor-Leste,5.15369735
-Middle East & North Africa (IDA & IBRD countries),5.819062881
-Tonga,6.241359153
-South Asia (IDA & IBRD),6.600085662
-Sub-Saharan Africa (IDA & IBRD countries),3.047722713
-Trinidad and Tobago,11.98459611
-Tunisia,9.322172191
-Turkey,8.935738927
-Tuvalu,6.682169182
-Tanzania,3.093712329
-Uganda,1.719314268
-Ukraine,20.18398551
-Upper middle income,11.68300973
-Uruguay,15.7846881
-United States of America,17.58791953
-Uzbekistan,5.323165759
-St. Vincent and the Grenadines,10.97315776
-Venezuela,8.814295432
-British Virgin Islands,10.49051937
-Virgin Islands (U.S.),20.88
-Vietnam,9.546047171
-Vanuatu,3.757331707
-World,10.03323883
-Samoa,5.340059642
-Kosovo,10.52209538
-Yemen,2.649358886
-South Africa,5.851654523
-Zambia,1.768656503
-Zimbabwe,3.295718794
+Country,2023,Income Group
+Aruba,16.8559519,High income
+Africa Eastern and Southern,3.158468881,Low income
+Afghanistan,2.395139671,Low income
+Central African Rep.,2.884924144,Low income
+Angola,2.624500287,Lower middle income
+Albania,17.11452568,Upper middle income
+Andorra,15.54789731,High income
+Arab World,4.654688347,Low income
+United Arab Emirates,1.865565899,High income
+Argentina,12.05958402,Upper middle income
+Armenia,13.69915555,Upper middle income
+American Samoa,7.689942957,High income
+Antigua and Barbuda,11.117415,High income
+Australia,17.23455041,High income
+Austria,20.20996744,High income
+Azerbaijan,7.615322572,Upper middle income
+Burundi,2.490788461,Low income
+Belgium,20.09262682,High income
+Benin,3.067263004,Lower middle income
+Burkina Faso,2.531638302,Low income
+Bangladesh,6.265958585,Lower middle income
+Bulgaria,22.30411365,High income
+Bahrain,4.027877304,High income
+Bahamas,9.284008303,High income
+Bosnia and Herz.,18.652225,Upper middle income
+Belarus,17.65608527,Upper middle income
+Belize,5.245907625,Upper middle income
+Bermuda,21.22477329,High income
+Bolivia,4.878117097,Lower middle income
+Brazil,10.2123654,Upper middle income
+Barbados,16.81427541,High income
+Brunei,6.554024266,High income
+Bhutan,6.377500319,Lower middle income
+Botswana,3.767092374,Upper middle income
+Central African Republic,2.524295295,Low income
+Canada,19.54574927,High income
+Central Europe and the Baltics,19.43763701,High income
+Switzerland,19.66522214,High income,
+Chad,2.005947676,Low income
+Channel Islands,16.64932006,High income
+Chile,13.47095889,High income
+China,14.26661153,Upper middle income
+Taiwan,18.35187298,High income
+Côte d'Ivoire,2.40423127,Lower middle income
+Cameroon,2.651290647,Lower middle income
+Dem. Rep. Congo,2.890127939,Low income
+Congo,2.779271997,Lower middle income
+Colombia,9.370067784,Upper middle income
+Comoros,4.295161811,Lower middle income
+Cabo Verde,5.73351128,Lower middle income
+Costa Rica,11.20371484,Upper middle income
+Caribbean small states,8.56891337,Upper middle income
+Cuba,16.10441925,Upper middle income
+Curacao,15.36519208,High income
+Cayman Islands,8.530515077,High income
+Cyprus,15.20083515,High income
+Czechia,20.78759578,High income
+Germany,22.7469231,High income
+Djibouti,4.593584697,Lower middle income
+Dominica,9.819961665,Upper middle income
+Denmark,20.71910888,High income
+Dominican Rep.,7.674301689,Upper middle income
+Algeria,6.608498325,Upper middle income
+East Asia & Pacific (excluding high income),12.18668047,Upper middle income
+Early-demographic dividend,6.494082271,Lower middle income
+East Asia & Pacific,13.41238667,Upper middle income
+Europe & Central Asia (excluding high income),10.646463,Upper middle income
+Europe & Central Asia,17.58973455,Upper middle income
+Ecuador,8.075774674,Upper middle income
+Egypt,4.911355181,Lower middle income
+Eswatini,4.017231276,Lower middle income
+Euro area,22.11968864,High income
+Eritrea,4.03310143,Low income
+Spain,20.73578123,High income
+Estonia,20.90514154,High income
+Ethiopia,3.157747837,Low income
+European Union,21.53317643,High income
+Fragile and conflict affected situations,4.031954378,Low income
+Finland,23.61767239,High income
+Fiji,6.095257725,Upper middle income
+France,21.99996297,High income
+Faroe Islands,17.95305006,High income
+"Micronesia, Fed. Sts.",6.394501146,Lower middle income
+Gabon,3.892177784,Upper middle income
+United Kingdom,19.45825771,High income
+Georgia,14.74246047,Upper middle income
+Ghana,3.649468224,Lower middle income
+Gibraltar,21.27965492,High income
+Guinea,3.309184269,Lower middle income
+Gambia,2.437735471,Low income
+Guinea-Bissau,2.835982373,Low income
+Eq. Guinea,3.118060806,Upper middle income
+Greece,23.14910431,High income
+Grenada,10.33851494,Upper middle income
+Greenland,10.64120898,High income
+Guatemala,4.934071508,Upper middle income
+Guam,12.27363662,High income
+Guyana,6.466613585,High income
+High income,19.24686736,High income
+"Hong Kong SAR, China",21.37368764,High income
+Honduras,4.379779565,Lower middle income
+Heavily indebted poor countries (HIPC),2.922638162,Low income
+Croatia,22.74943238,High income
+Haiti,4.606527884,Lower middle income
+Hungary,19.74618754,High income
+IBRD only,10.08336533,Upper middle income
+IDA & IBRD total,8.35397525,Upper middle income
+IDA total,3.818961556,Low income
+IDA blend,3.658269875,Lower middle income
+Indonesia,7.024628656,Upper middle income
+IDA only,3.898348277,Lower middle income
+Isle of Man,22.69271633,High income
+India,7.072109453,Lower middle income
+Ireland,15.48454899,High income
+Iran,7.934023175,Upper middle income
+Iraq,3.389042768,Upper middle income
+Iceland,15.73863265,High income
+Israel,12.17118237,High income
+Italy,24.46030489,High income
+Jamaica,7.751800671,Upper middle income
+Jordan,3.977916659,Lower middle income
+Japan,30.06763042,High income
+Kazakhstan,8.19124813,Upper middle income
+Kenya,2.907221323,Lower middle income
+Kyrgyzstan,4.745456712,Lower middle income
+Cambodia,6.116837671,Lower middle income
+Kiribati,3.902183275,Lower middle income
+St. Kitts and Nevis,10.59470213,High income
+South Korea,18.37839131,High income
+Kuwait,5.444748188,High income
+Latin America & Caribbean (excluding high income),9.233399829,Upper middle income
+Laos,4.577104248,Lower middle income
+Lebanon,10.28124296,Lower middle income
+Liberia,3.293025134,Low income
+Libya,4.969965397,Upper middle income
+St. Lucia,9.494260781,Upper middle income
+Latin America & Caribbean,9.452278893,Upper middle income
+Least developed countries: UN classification,3.702122043,Low income
+Low income,3.188250142,Low income
+Liechtenstein,20.02804128,High income
+Sri Lanka,11.91670626,Lower middle income
+Lower middle income,5.921616498,Lower middle income
+Low & middle income,8.077907638,Lower middle income
+Lesotho,4.219618142,Lower middle income
+Late-demographic dividend,13.36575888,Upper middle income
+Lithuania,21.21979074,High income
+Luxembourg,15.35354152,High income
+Latvia,22.24122731,High income
+"Macao SAR, China",13.6644278,High income
+St. Martin (French part),11.77011566,High income
+Morocco,8.028464502,Lower middle income
+Monaco,35.79172119,High income
+Moldova,12.6559148,Upper middle income
+Madagascar,3.4047653,Low income
+Maldives,5.704551214,Upper middle income
+Mexico,11.82300843,Upper middle income
+Marshall Islands,5.520051685,Upper middle income
+North Macedonia,11.93150531,Upper middle income
+Mali,3.252812651,Low income
+Malta,17.95234366,High income
+Myanmar,5.563695557,Lower middle income
+Montenegro,14.88998531,Upper middle income
+Mongolia,4.649017849,Upper middle income
+Mozambique,4.596573424,Low income
+Mauritania,4.019338639,Lower middle income
+Mauritius,12.15812523,Upper middle income
+Malawi,2.505689081,Low income
+Namibia,6.934582088,Upper middle income
+Niger,2.30442269,Low income
+Nigeria,3.418100563,Lower middle income
+Nicaragua,5.130290565,Lower middle income
+Netherlands,21.96858659,High income
+Norway,25.67883912,High income
+Nepal,5.249502785,Lower middle income
+New Zealand,19.34523965,High income
+Oman,11.0278738,High income
+Pakistan,4.488044427,Lower middle income
+Palau,12.30020079,High income
+Panama,12.93161515,Upper middle income
+Papua New Guinea,4.560130142,Lower middle income
+Paraguay,6.364606927,Upper middle income
+Peru,8.572472947,Upper middle income
+Philippines,7.689471374,Lower middle income
+Poland,18.16366356,High income
+Portugal,20.33274321,High income
+Qatar,26.15971181,High income
+Romania,14.51625409,Upper middle income
+Russia,14.13934463,Upper middle income
+Rwanda,3.243809009,Low income
+Saudi Arabia,19.3840132,High income
+Solomon Islands,4.344056475,Lower middle income
+Seychelles,12.90425959,High income
+Sudan,3.354916542,Low income,
+Suriname,7.5870075,Upper middle income
+Sweden,22.82558627,High income
+Singapore,30.29463329,High income
+Slovakia,20.20022349,High income
+Slovenia,20.84313404,High income
+Sierra Leone,2.086001471,Low income
+San Marino,19.35042722,High income
+South Africa,9.488935504,Upper middle income
+South Asia,7.033063692,Lower middle income
+S. Sudan,2.555363128,Low income
+Spain,20.73578123,High income
+Switzerland,19.66522214,High income
+Syria,3.747279671,Lower middle income
+Tajikistan,4.391329626,Lower middle income
+Thailand,11.38879303,Upper middle income
+Timor-Leste,4.917098164,Lower middle income
+Togo,2.581682289,Low income
+Tonga,7.253645129,Upper middle income
+Trinidad and Tobago,14.91761481,High income
+Tunisia,8.31175124,Upper middle income
+Turkey,10.1000086,Upper middle income
+Taiwan,18.35187298,High income
+Uganda,4.47007357,Low income
+Ukraine,13.82570023,Upper middle income
+United States of America,25.70175763,High income
+Uruguay,19.12399218,Upper middle income
+Uzbekistan,3.794399568,Lower middle income
+Vanuatu,5.523600273,Upper middle income
+Venezuela,5.158063156,Upper middle income
+Vietnam,7.027775866,Lower middle income
+Wallis and Futuna,5.27953678,High income
+World,12.70794636,High income
+Yemen,2.847343213,Low income
+Zambia,3.463574325,Lower middle income
+Zimbabwe,3.256153014,Lower middle income
+Tanzania,3.093712329,Lower middle income
+Somalia,2.553220725,Low income
+Somaliland, 2.553220725,Low income
+Malaysia,7.78656471,Upper middle income
+North Korea,12.1931301,Low income
+Turkmenistan,5.406408741,Upper middle income

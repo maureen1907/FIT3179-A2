@@ -1,5 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{
+        "text": "Life Expectancy by Year and Sex",
+        "fontSize": 20,
+        "anchor": "start"
+    },
     "data": {
       "values": [
 

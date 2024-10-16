@@ -1,22 +1,90 @@
+@font-face {
+    font-family: 'StripesCaps';
+    src: url('fonts/StripesCaps.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'EffloresceAntique';
+    src: url('fonts/EffloresceAntique.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Effloresce';
+    src: url('fonts/Effloresce.otf') format('truetype');
+}
+@font-face {
+    font-family: 'EffloresceBd';
+    src: url('fonts/Effloresce-Bd.otf') format('truetype');
+}
+@font-face {
+    font-family: 'CocoGothic';
+    src: url('fonts/Coco-Gothic-Regular-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboga';
+    src: url('fonts/Robaga-Rounded-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Confortaa';
+    src: url('fonts/Comfortaa-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amiko';
+    src: url('fonts/Amiko-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+.vega-embed .vega-bind {
+    font-family: 'NunitoRegular', sans-serif;
+    text-align: center;
+}
+
+#tip {
+    color: rgb(27, 26, 26);
+    font-size: 15px;
+    text-align: center;
+    font-style: bold;
+    font-family: 'NunitoBold', sans-serif;
+}
+
+#subheading {
+    color: rgb(27, 26, 26);
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'NunitoRegular',cursive, sans-serif;
+}
+
 #h1 {
     color: rgb(27, 26, 26);
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
-    font-family: 'Helvetica', sans-serif;
+    font-weight: 600;
+    font-family: 'EffloresceBd',cursive, sans-serif;
 }
 
 #h2 {
     color: rgb(27, 26, 26);
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'NunitoBold',cursive, sans-serif;
 }
 
 #h3 {
     color: rgb(27, 26, 26);
     font-size: 20px;
     text-align: center;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Amiko', sans-serif;
 }
 
 #playButton {

@@ -17,32 +17,87 @@
 </head>
 
 <body style="background-color: aliceblue; ">
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <div id="h1" style="background-color:aqua; color:rgb(52, 52, 120); padding: 1em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
-            Australia's Aging Demographic
+    <p style="padding:0.5em;"></p>
+    <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; background-color: rgb(36, 69, 112);margin-left: 10%; margin-right: 10%;border-radius: 10px;padding: 1em;">
+        <div id="h1" style="color:rgb(223, 225, 231);border-color: black; padding-top:0.5em; padding-bottom:0.5em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
+            Australia's Aging Population
         </div> 
+
     </div>
-    <div style="background-color:beige; display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; gap: 5%;padding-top:1em; padding-bottom: 1em;">
-        <div style="background-color: rgb(255, 242, 242); margin-left: 5%;">
-            <div style="padding: 1em;">
-            <p id="h3"> Australia, like many developed nations, is facing the challenges of an aging population. 
-                This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
-                As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
-                This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face. </p>
-            </div>
+    <p style="padding: 10px;"></p>
+
+    <div style="margin-left: 10%; margin-right: 10%; padding: 2em; background-color: rgb(223, 233, 246); border: 2px solid rgb(175, 175, 175); border-radius: 10px;">
+        <div id="h2">Introduction
+        <div style=" display: flex; flex-direction: row; background-color: white; padding: 1em; border-radius: 8px;">
+            <p id="h3">Australia, like many developed nations, is facing the challenges of an aging population. 
+               This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
+               As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
+               This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face.</p>
         </div>
-        <div id="chloro_map" style="margin-right: 5%; "></div>
-    </div>
-    <div style="display: flex;">
-        <div id="overtake_chart" style="margin-left: 5%; margin-right: 5%;"></div>
+        </div>
     </div>
     
 
-    <div id="h2">Life Expectancy</div>
-    <p id="h3"> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
-    <div id="life_expectancy">
+    <p style="padding: 10px;"></p>
+    <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
+    <p style="padding-top: 1%;"></p>
+    <div id="h2" style="color:rgb(36, 69, 112); display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; border-radius: 10px; margin:auto">
+        Global Overview of the Ageing Demographic
+    </div>
+    <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em; ">
+        <div style="padding: 3px; border-radius: 8px;">
+            <div style="background-color:aliceblue;border-radius: 8px; padding:1em;">
+            <p id="h3" style="color:rgb(36, 69, 112); margin-left: 10%; margin-right: 10%; "> 
+                Like many developed nations, Australia has seen a shift toward an older population, driven by rising life expectancy and declining fertility rates. While this trend began in high-income countries, it is now occurring in low- and middle-income countries as well.
+                </p>
+            <p id="tip">Tip: Hover over the countries in the map to see the proportion of seniors and the income level of each country</p>
+            </div>
+        </div>
+        <div id="chloro_map" style="display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center"></div>
+    </div>
+    <p style="padding: 10px;"></p>
     </div>
 
+    <p style="padding: 5px;"></p>
+    <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
+        <p style="padding-top: 1%;"></p>
+            <div id="h2" style="color:rgb(36, 69, 112); display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; border-radius: 10px; margin:auto; padding-bottom:1%;">
+                Population Growth of Older Australians
+            </div>
+        <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em; ">
+            <div style="background-color:aliceblue; border-radius: 8px; padding:1em; max-width: fit-content;">
+                <p id="h3" style="color:rgb(36, 69, 112); margin-left: 10%; margin-right: 10%; "> 
+                    In Australia, the most fastest-growing age group is 65 years and older. *Add statistic here* 
+                    While this trend began in high-income countries, it is now occurring in low- and middle-income countries as well.
+                    </p>
+                <p id="tip">Tip: Drag your cursors over a section in the population graph to closely view the points.</p>
+                <p id="tip">Tip: Hover over a point to view the Year, Age Group, and its Population.</p>
+                </div>
+        </div>
+        <p style="padding: 5px;"></p>
+            <div style="display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; background-color:white;padding: 2em; margin-left: 10%; margin-right: 10%;">
+                <div id="overtake_chart" style="margin-left: 1em; margin-right: 1em;"></div>
+            </div>
+    </div>
+
+    <p style="padding: 5px;"></p>
+    <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
+        <p style="padding-top: 1%;"></p>
+        <div id="h2" style="color:rgb(36, 69, 112); display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; border-radius: 10px; margin:auto; padding-bottom:1%;">
+            Life Expectancy
+        </div>
+        <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em; ">
+        <div style="background-color: aliceblue;padding: 3px;">
+            <p id="h3"> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
+        </div>
+        <div style="display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;padding: 2em;gap: 2em;">
+            <div id="life_expectancy"></div>
+            <div id="healthy_life_expectancy"></div>
+        </div>
+            </div>
+    </div>
+
+    </div>
     <p id="h3">There are twice as many women as men aged 85 years and over, reflecting their longer life expectancy. It is estimated that the number of Australians aged 85 and over will increase from 400,000 in 2010 to 1.8 million by 2050.</p>
     <div id="pop_pyramid"></div>
 
