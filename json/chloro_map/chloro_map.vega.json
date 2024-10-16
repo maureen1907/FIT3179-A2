@@ -45,7 +45,7 @@
           "type": "quantitative",
           "scale": {
             "domain": [-1, 0, 10, 20, 30, 40],
-            "range": ["#98e0b8", "#98e0b8", "#4a8f6a", "#25523a", "#051f11"]
+            "range": ["#808080", "#98e0b8", "#4a8f6a", "#25523a", "#051f11"]
 
           },
           "legend": {"title": "Percentage of Seniors"}

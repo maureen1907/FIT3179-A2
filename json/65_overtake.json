@@ -128,15 +128,6 @@
                 "fontSize": 16,
                 "font": "Amiko"
             },
-            "params": [
-                {
-                    "name": "brush",
-                    "select": {
-                        "type": "interval",
-                        "encodings": ["x"]
-                    }
-                }
-            ],
             "data": {
                 "url": "data/65_overtake.csv",
                 "format": {
