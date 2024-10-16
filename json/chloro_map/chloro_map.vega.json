@@ -36,8 +36,8 @@
         "type": "geoshape",
         "stroke": "black",
         "strokeWidth": 0.8,
-        "opacity": 0.8,
-        "tooltip": {"content": "data"}
+        "opacity": 0.8
+        
       },
       "encoding": {
         "color": {

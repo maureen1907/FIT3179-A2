@@ -3,7 +3,7 @@
     "title":{
         "text": "Healthy Life Expectancy by Year and Sex",
         "fontSize": 20,
-        "anchor": "start"
+        "font": "Amiko"
     },
     "data": {
         
@@ -94,7 +94,7 @@
                         "titleFont": "Amiko",
                         "labelFont": "Amiko"
                 },
-                "scale": {"domain": [2000, 2021]}
+                "scale": {"nice":true}
                 },
                 "y": {
                     "field": "Life Expectancy",
@@ -104,7 +104,7 @@
                         "titleFont": "Amiko",
                         "labelFont": "Amiko"
                     },
-                    "scale": {"domain": [60, 80]}
+                    "scale": {"domain": [65, 75]}
                     
                 },
                 "color": {
@@ -115,7 +115,7 @@
             },
             "transform": [
                 {
-                    "filter": "datum.Year <= Year"
+                    "filter": "datum.Year <= year_slider"
                 }
             ]
         },
@@ -124,16 +124,24 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": -30
+                "dy": 90,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "#1f77b4"
                 }
             },
             "transform": [
-                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Year == year_slider"},
                 {"filter": "datum.Sex == 'F'"}
             ]
         },
@@ -142,16 +150,25 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 0
+                "dy": 110,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "orange"
                 }
             },
+            
             "transform": [
-                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Year == year_slider"},
                 {"filter": "datum.Sex == 'T'"}
             ]
         },
@@ -160,29 +177,38 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 25
+                "dy": 130,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "green"
                 }
             },
             "transform": [
-                {"filter": "datum.Year == Year"},
+                {"filter": "datum.Year == year_slider"},
                 {"filter": "datum.Sex == 'M'"}
             ]
         }
     ],
     "params": [
       {
-        "name": "Year",
+        "name": "year_slider",
         "value": 2000,
         "bind": {
           "input": "range",
           "min": 2000,
           "max": 2021,
-          "step": 1
+          "step": 1,
+          "name": "Year:"
         }
       }
     ],
@@ -193,6 +219,15 @@
       },
       "text":{
         "font": "Amiko"
+      },
+      "legend": {
+        "titleFont": "Amiko",
+        "labelFont": "Amiko",
+        "titleFontSize": 16,
+        "labelFontSize": 14,
+        "symbolSize": 300,
+        "symbolStrokeWidth": 3
+
       }
     }
 }

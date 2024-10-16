@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Workforce Participation Rate by Year and Age Group",
+        "fontSize": 20,
+        "font": "Amiko"
+    },
+    "data": {
+        "url": "data/workforce.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "mark": {
+        "type": "circle",
+        "size": 70 
+    },
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "temporal",
+            "axis": {
+                "title": "Year",
+                "labelFont": "Amiko",
+                "titleFont": "Amiko",
+                "tickCount": 5
+            },
+            "scale": {
+                "padding": 10 
+            }
+        },
+        "y": {
+            "field": "Participation Rate",
+            "type": "quantitative",
+            "axis": {
+                "title": "Participation Rate (%)",
+                "labelFont": "Amiko",
+                "titleFont": "Amiko"
+            },
+            "scale": {
+                "domain": [0, 100]
+            }
+        },
+        "color": {
+            "field": "Age Group",  
+            "type": "nominal",
+            "legend": {
+                "title": "Age Group",
+                "labelFont": "Amiko",
+                "titleFont": "Amiko"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "Year",
+                "type": "temporal",
+                "title": "Year",
+                "format": "%Y"
+            },
+            {
+                "field": "Age Group",
+                "type": "nominal",
+                "title": "Age Group"
+            },
+            {
+                "field": "Participation Rate",
+                "type": "quantitative",
+                "title": "Participation Rate",
+                "format": ".1f"
+            }
+        ]
+    },
+    "config": {
+        "axis": {
+            "labelFontSize": 14,
+            "titleFontSize": 16
+        }
+    }
+}

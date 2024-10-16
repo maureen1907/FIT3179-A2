@@ -30,14 +30,16 @@
                             "axis": {
                                 "title": "Year",
                                 "labelExpr": "datum.value % 10 === 0 ? datum.value : ''",
-                                "labelOverlap": "parity"
+                                "labelOverlap": "parity",
+                                "labelFont": "Amiko"
                             }
                         },
                         "y": {
                             "field": "Population",
                             "type": "quantitative",
                             "axis": {
-                                "title": "Population"
+                                "title": "Population",
+                                "labelFont": "Amiko"
                             }
                         },
                         "color": {
@@ -85,7 +87,7 @@
                 },
                 {
                     "data": {
-                        "values": [{"Year": 2059, "text": "In 2048, older people overtake younger people"}]  
+                        "values": [{"Year": 2060, "text": "In 2048, older people overtake younger people"}]  
                     },
                     "mark": "text",
                     "encoding": {
@@ -94,7 +96,7 @@
                             "type": "ordinal"
                         },
                         "y": {
-                            "value": 100  
+                            "value": 70  
                         },
                         "text": {
                             "field": "text"
@@ -103,7 +105,7 @@
                             "value": "black"  
                         },
                         "size": {
-                            "value": 16
+                            "value": 14
                         }
                     }
                 }
@@ -145,12 +147,18 @@
                     "field": "Year",
                     "type": "ordinal",
                     "title": "Year",
-                    "scale": {"domain": {"param": "brush"}}
+                    "scale": {
+                        "domain":{
+                            "param": "brush"}}
                 },
                 "y": {
                     "field": "Population",
                     "type": "quantitative",
-                    "title": "Count of Ages"
+                    "title": "Count of Ages",
+                    "axis": {
+                        "titleFont": "Amiko",
+                        "labelFont": "Amiko"
+                    }
                 },
                 "color": {
                     "field": "Age Group",
@@ -177,6 +185,7 @@
     ],
     "config": {
         "axis": {
+            "labelFont": "Amiko",
             "labelFontSize": 10,
             "titleFontSize": 16
         },
@@ -193,6 +202,15 @@
         },
         "point": {
             "size": 50
-        }
+        },
+        "legend": {
+        "titleFont": "Amiko",
+        "labelFont": "Amiko",
+        "titleFontSize": 16,
+        "labelFontSize": 14,
+        "symbolSize": 100,
+        "symbolStrokeWidth": 3
+
+      }
     }
 }

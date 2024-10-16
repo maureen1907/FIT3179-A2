@@ -19,24 +19,10 @@
 <body style="background-color: aliceblue; ">
     <p style="padding:0.5em;"></p>
     <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; background-color: rgb(36, 69, 112);margin-left: 10%; margin-right: 10%;border-radius: 10px;padding: 1em;">
-        <div id="h1" style="color:rgb(223, 225, 231);border-color: black; padding-top:0.5em; padding-bottom:0.5em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
+        <div id="h1" style="color:rgb(255, 255, 255);border-color: black; padding-top:0.5em; padding-bottom:0.5em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
             Australia's Aging Population
         </div> 
-
     </div>
-    <p style="padding: 10px;"></p>
-
-    <div style="margin-left: 10%; margin-right: 10%; padding: 2em; background-color: rgb(223, 233, 246); border: 2px solid rgb(175, 175, 175); border-radius: 10px;">
-        <div id="h2">Introduction
-        <div style=" display: flex; flex-direction: row; background-color: white; padding: 1em; border-radius: 8px;">
-            <p id="h3">Australia, like many developed nations, is facing the challenges of an aging population. 
-               This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
-               As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
-               This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face.</p>
-        </div>
-        </div>
-    </div>
-    
 
     <p style="padding: 10px;"></p>
     <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
@@ -48,7 +34,7 @@
         <div style="padding: 3px; border-radius: 8px;">
             <div style="background-color:aliceblue;border-radius: 8px; padding:1em;">
             <p id="h3" style="color:rgb(36, 69, 112); margin-left: 10%; margin-right: 10%; "> 
-                Like many developed nations, Australia has seen a shift toward an older population, driven by rising life expectancy and declining fertility rates. While this trend began in high-income countries, it is now occurring in low- and middle-income countries as well.
+                Countries with a large ageing population has become a global issue. Like many developed nations, Australia has seen a shift toward an older population, driven by rising life expectancy and declining fertility rates. While this trend began in high-income countries, it is now occurring in low- and middle-income countries as well.
                 </p>
             <p id="tip">Tip: Hover over the countries in the map to see the proportion of seniors and the income level of each country</p>
             </div>
@@ -66,7 +52,7 @@
             </div>
         <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em; ">
             <div style="background-color:aliceblue; border-radius: 8px; padding:1em; max-width: fit-content;">
-                <p id="h3" style="color:rgb(36, 69, 112); margin-left: 10%; margin-right: 10%; "> 
+                <p id="h3" style="color:rgb(36, 69, 112); margin-left: 10%; margin-right: 10%;"> 
                     In Australia, the most fastest-growing age group is 65 years and older. *Add statistic here* 
                     While this trend began in high-income countries, it is now occurring in low- and middle-income countries as well.
                     </p>
@@ -80,56 +66,109 @@
             </div>
     </div>
 
+    <p style="padding:0.5em;"></p>
+    <div style="display: flex; flex-direction:column; justify-content: center; align-items: center; background-color: rgb(36, 69, 112);margin-left: 10%; margin-right: 10%;border-radius: 10px;padding: 1em;">
+        <div id="subheading" style="color:rgb(255, 255, 255);border-color: black; padding-top:0.5em; padding-bottom:0.5em; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;">
+            Contributing Factors to Australia's Aging Population
+        </div> 
+
+    </div>
+
     <p style="padding: 5px;"></p>
     <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
         <p style="padding-top: 1%;"></p>
         <div id="h2" style="color:rgb(36, 69, 112); display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; border-radius: 10px; margin:auto; padding-bottom:1%;">
-            Life Expectancy
+            Increasing Life Expectancy
         </div>
         <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em; ">
-        <div style="background-color: aliceblue;padding: 3px;">
-            <p id="h3"> Life expectancy is the number of years a newborn is expected to live for. Factors such as health care access, lifestyle habits, and socioeconmic status can impact life expectancy. From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
+        <div style="background-color: aliceblue;padding: 3px; border-radius:8px;">
+            <p id="h3" style="color:rgb(36, 69, 112);margin-left: 10%; margin-right:10%;"> 
+                Life expectancy is the number of years a newborn is expected to live for. 
+                Factors such as health care access, lifestyle habits, and socioeconomic status can impact life expectancy. 
+                From 2000 to 2021, life expectancy has increased by 3.41 years from 79.7 years in 2000 to 83.1 years in 2021.</p>
+            <p id="tip">Note: F-Female, M-Male, T-Total </p>
+            <p id="tip">Tip: Click Play to watch both graphs move over time.</p>
+            <p id="tip">Tip: Scroll through a slider to see how life and healthy life expectancies change separately.</p>
         </div>
         <div style="display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center;padding: 2em;gap: 2em;">
             <div id="life_expectancy"></div>
             <div id="healthy_life_expectancy"></div>
         </div>
             </div>
-    </div>
+        </div>
 
-    </div>
-    <p id="h3">There are twice as many women as men aged 85 years and over, reflecting their longer life expectancy. It is estimated that the number of Australians aged 85 and over will increase from 400,000 in 2010 to 1.8 million by 2050.</p>
-    <div id="pop_pyramid"></div>
-
+   
     <!-- Fertility -->
-    <div id="h2">Fertility Rate</div>
-    <p id="h3">One of the primary drivers of an aging population is declining fertility rates. 
-        Over the past several decades, Australia has experienced a steady decline in the number of births per woman. 
-        In the 1960s, the fertility rate was around 3.5 children per woman, but today it is closer to 1.6. 
-        This means fewer young people are entering the population, while older generations continue to grow. 
-        Lower fertility rates reduce the size of future working-age cohorts, exacerbating the imbalance between the elderly and the workforce.</p>
+    <p style="padding: 5px;"></p>
+    <div style=" border: 2px solid rgb(175, 175, 175); border-radius: 10px;margin-left: 10%; margin-right:10%;background-color:white;">
+        <p style="padding-top: 1%;"></p>
+        <div id="h2" style="color:rgb(36, 69, 112); display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; border-radius: 10px; margin:auto; padding-bottom:1%;">
+            Lowered Fertility Rates
+        </div>
+        <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em;">
+            <div style="background-color: aliceblue;padding: 3px; border-radius:8px;">
+                <p id="h3" style="color:rgb(36, 69, 112);margin-left: 10%; margin-right:10%;">
+                    One of the primary drivers of an aging population is declining fertility rates. 
+                    Over the past several decades, Australia has experienced a steady decline in the number of births per woman. 
+                     
+                    </p>
+                <p id="tip">Tip: Hover over the graph to view the changes in birth rates over time.</p>
+            </div>
+            </div>
+            <p style="padding: 5px;"></p>
+        <div style="display: flex; max-width: fit-content; flex-direction: row; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em;">
+        <div id="fert_rate"></div>
+        <div style="background-color: aliceblue;padding: 3px; border-radius:8px;">
+            <p id="h3" style="color:rgb(36, 69, 112);margin-left: 10%; margin-right:10%;">
+                In the 1960s, the fertility rate was around 3.5 children per woman, but today it is closer to 1.6. 
+                </p>
+            
+        </div>
+        </div>
+        <p style="padding: 5px;"></p>
+        <div style="display: flex; max-width: fit-content; flex-direction: column; justify-content: center; align-items: center; gap: 2em;padding-left:2em;padding-right:2em;">
+            <div style="background-color: aliceblue;padding: 3px; border-radius:8px;">
+                <p id="h3" style="margin-left: 10%; margin-right:10%;">
+                    This means fewer young people are entering the population, while older generations continue to grow.
+                    Lower fertility rates reduce the size of future working-age cohorts, exacerbating the imbalance between the elderly and the workforce.
+                </p>
+            </div>
+            <div id="workforce"></div>
+            <p style="padding-top: 1%;"></p>
+            </div>
+        </div>
 
-    <div id="fert_rate"></div>
-    
-    
+        
+    <!-- Migration
     <div>
-    <p id="h2">Migration</p>
+    <p id="h2">Balancing Australia's Population</p>
     <p id="h3">Migration plays a critical role in Australia's population dynamics. 
         Historically, Australia has relied on immigration to help maintain a balanced age structure. 
         Younger immigrants contribute to the labor market, helping to support the aging population. 
         However, migration alone cannot fully offset the effects of low fertility rates and longer life expectancy. 
         While immigration can slow the aging trend, the country still faces long-term challenges in sustaining economic growth and providing social services for an older population.</p>
-    <!-- <div id="migration"></div> -->
+   <div id="migration"></div> -->
     </div>
-
-    <div>
-        <p id="h2">Economic Impact</p>
-        <p id="h3">The aging population has significant economic implications for Australia. 
-            As the proportion of older individuals increases, there are fewer people in the workforce to support them. 
-            This can lead to labor shortages, reduced productivity, and increased pressure on social welfare programs. 
-            Additionally, an aging population may require increased healthcare services and long-term care, placing further strain on the economy. 
-            Addressing these challenges will require innovative policies and strategies to support the aging population while maintaining economic growth and sustainability.</p>
-        <!-- <div id="economic_impact"></div> -->
+    </div>
+        <p style="padding: 10px;"></p>
+    <div style="margin-left: 10%; margin-right: 10%; padding: 2em; background-color: rgb(223, 233, 246); border: 2px solid rgb(175, 175, 175); border-radius: 10px;">
+        <p id="h3">Created by Maureen Pham. 
+            Data sourced from <a href="https://data.who.int/countries/036" target="_blank">WHO</a>, 
+            <a href="https://www.aihw.gov.au/reports/older-people/older-australians/contents/employment-and-work" target="_blank">AIHW</a>,
+            and <a href="https://www.abs.gov.au/statistics/people/population/population-projections-australia/2022-base-2071" target="_blank">ABS</a>.</p>
+            <p id="h3">Data visualizations were developed with the help of generative AI.</p>
+            <p id="h3">Date:17/10/2024</p>
+        
+        <!-- <div id="h2">Introduction
+        <div style=" display: flex; flex-direction: row; background-color: white; padding: 1em; border-radius: 8px;">
+            <p id="h3">Australia, like many developed nations, is facing the challenges of an aging population. 
+               This shift in demographics is driven by multiple factors, leading to significant implications for the economy, healthcare, and society at large. 
+               As life expectancy increases and birth rates decline, the proportion of older individuals continues to rise, putting pressure on the nation's working-age population and resources. 
+               This data visualization will explore the key factors influencing Australia's aging demographic and examine the long-term issues the country will face.</p>
+        </div>
+        </div> -->
+    </div>
+    
     </div>
 
 </body>

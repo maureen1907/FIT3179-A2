@@ -1,27 +1,53 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A simple line chart showing the fertility rate over time.",
+    "title": {
+        "text": "Fertility Rate by Year",
+        "fontSize": 20,
+        "font": "Amiko"
+    },
     "data": {
         "url": "data/fertility_rate.csv",
         "format": {
             "type": "csv"
         }
     },
-    "mark": "line",
+    "mark": {
+        "type": "area",
+        "strokeWidth": 3 
+    },
     "encoding": {
         "x": {
             "field": "Year",
-            "type": "quantitative", 
+            "type": "temporal", 
             "axis": {
-                "title": "Year"
+                "title": "Year",
+                "labelFont": "Amiko",
+                "titleFont": "Amiko"
             }
         },
         "y": {
             "field": "Fertility Rate",
             "type": "quantitative",
             "axis": {
-                "title": "Fertility Rate"
+                "title": "Fertility Rate",
+                "labelFont": "Amiko",
+                "titleFont": "Amiko"
             }
-        }
+        },
+        "tooltip": [
+            {
+                "field": "Year",
+                "type": "temporal",
+                "title": "Year",
+                "format": "%Y"
+
+            },
+            {
+                "field": "Fertility Rate",
+                "type": "quantitative",
+                "title": "Fertility Rate",
+                "format": ".1f"
+            }
+        ]
     }
 }

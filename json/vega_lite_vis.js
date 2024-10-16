@@ -5,6 +5,7 @@ var vg_4 = "json/fert_rate.json";
 var vg_5 = "json/65_overtake.json";
 var vg_6 = "json/australia_map/life_expectancy_map.json";
 var vg_7 = "json/healthy_life_expectancy.json";
+var vg_8 = "json/workforce.json";
 
 vegaEmbed("#chloro_map", vg_1, {
   width: 1000,
@@ -20,25 +21,25 @@ vegaEmbed("#overtake_chart", vg_5, {
   actions: false
 }).then(function(result) {}).catch(console.error);
 
-
-vegaEmbed("#healthy_life_expectancy", vg_7, {
-  width: 300,
-  height: 300,
-  renderer: "svg", 
-  actions: false
-}).then(function(result) {}).catch(console.error);
-
-vegaEmbed("#life_expectancy", vg_2, {
-  width: 300,
-  height: 300,
-  renderer: "svg", 
-  actions: false
-}).then(function(result) {
+// embed both charts
+Promise.all([
+  vegaEmbed("#healthy_life_expectancy", vg_7, {
+    width: 300,
+    height: 300,
+    renderer: "svg",
+    actions: false
+  }),
+  vegaEmbed("#life_expectancy", vg_2, {
+    width: 300,
+    height: 300,
+    renderer: "svg",
+    actions: false
+  })
+]).then(([result1, result2]) => {
   let playing = false;
   let year = 2000;
 
-  // Add a Play button
- 
+  // create Play button
   const playButton = document.createElement("button");
   playButton.id = "playButton";
   playButton.innerHTML = "Play";
@@ -46,35 +47,50 @@ vegaEmbed("#life_expectancy", vg_2, {
   document.body.appendChild(playButton);
 
   // Play button event listener
-  playButton.addEventListener('click', function() {
+  playButton.addEventListener('click', function () {
     playing = !playing;
     if (playing) {
-        playButton.innerHTML = "Pause";
-        year = 2000;
+      playButton.innerHTML = "Pause";
+      year = 2000;
       playAnimation();
     } else {
-        playButton.innerHTML = "Play";
+      playButton.innerHTML = "Play";
     }
   });
 
-  // Function to animate the slider by incrementing the year
+  // function to animate the slider by incrementing the year
   function playAnimation() {
     if (year <= 2021 && playing) {
-      result.view.signal('year_slider', year).runAsync().then(()=> {
+      // update the year_slider signal for both charts
+      Promise.all([
+        result1.view.signal('year_slider', year).runAsync(),
+        result2.view.signal('year_slider', year).runAsync()
+      ]).then(() => {
         year++;
-      setTimeout(playAnimation, 1000); // Adjust the time (1000 ms = 1 second) for slower increment
-          });
-        }
-      }
-    }).catch(console.error);
+        setTimeout(playAnimation, 1000); // 1sec increments
+      });
+    }
+  }
+}).catch(console.error);
+
 
     vegaEmbed("#pop_pyramid", vg_3, {renderer: "svg", actions: false}).then(function(result) {
     }).catch(console.error);
 
-    vegaEmbed("#fert_rate", vg_4, {renderer: "svg", actions: false}).then(function(result) {
-    }).catch(console.error);
+    vegaEmbed("#fert_rate", vg_4, {
+      width: 800,
+      height: 300,
+      renderer: "svg", 
+      actions: false
+    }).then(function(result) {}).catch(console.error);
     
 
     vegaEmbed("#life_expectancy_map", vg_6, {renderer: "svg", actions: false}).then(function(result) {
     }).catch(console.error);
 
+    vegaEmbed("#workforce", vg_8, {
+      width: 800,
+      height: 300,
+      renderer: "svg", 
+      actions: false
+    }).then(function(result) {}).catch(console.error);

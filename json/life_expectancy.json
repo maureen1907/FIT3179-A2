@@ -3,7 +3,8 @@
     "title":{
         "text": "Life Expectancy by Year and Sex",
         "fontSize": 20,
-        "anchor": "start"
+        "anchor": "start",
+        "font": "Amiko"   
     },
     "data": {
       "values": [
@@ -94,13 +95,16 @@
                         "format": "%Y",
                         "tickCount": "year"
                 },
-                "scale": {"domain": [2000, 2021]}
+                "scale": 
+                {
+            
+                    "nice": true}
                 },
                 "y": {
                     "field": "Life Expectancy",
                     "type": "quantitative",
                     "axis": {"title": "Life Expectancy"},
-                    "scale": {"domain": [75, 90]}
+                    "scale": {"domain": [75, 85]}
                 },
                 "color": {
                     "field": "Sex",
@@ -119,12 +123,20 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": -30
+                "dy": 90,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "#1f77b4"
                 }
             },
             "transform": [
@@ -137,12 +149,20 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 0
+                "dy": 110,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "orange"
                 }
             },
             "transform": [
@@ -155,12 +175,20 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 25
+                "dy": 130,
+                "dx": 100,
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "font": "Amiko"
             },
             "encoding": {
                 "text": {
                     "field": "Life Expectancy",
-                    "type": "quantitative"
+                    "type": "quantitative",
+                    "format": ".1f"
+                },
+                "color": {
+                    "value": "green"
                 }
             },
             "transform": [
@@ -186,6 +214,15 @@
       "axis": {
         "labelFontSize": 14,
         "titleFontSize": 16
+      },
+      "circle": {
+            "size": 100
+        },
+        "point": {
+            "size": 50
+        },
+      "legend": {
+        "disable": true
       }
     }
 }

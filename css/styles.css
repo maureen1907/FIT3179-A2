@@ -59,10 +59,9 @@
 
 #subheading {
     color: rgb(27, 26, 26);
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
-    font-style: italic;
-    font-family: 'NunitoRegular',cursive, sans-serif;
+    font-family: 'EffloresceBd',cursive, sans-serif;
 }
 
 #h1 {
@@ -100,7 +99,7 @@
     cursor: pointer;
     border-radius: 12px;
     position:relative;
-    transform: translate(-20px, -1100px);
+    transform: translate(950px, -2245px);
 }
 
 #playButton:hover {
