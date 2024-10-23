@@ -104,7 +104,7 @@
                     "field": "Life Expectancy",
                     "type": "quantitative",
                     "axis": {"title": "Life Expectancy"},
-                    "scale": {"domain": [75, 85]}
+                    "scale": {"domain": [65, 85]}
                 },
                 "color": {
                     "field": "Sex",

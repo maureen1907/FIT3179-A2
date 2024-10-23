@@ -104,7 +104,7 @@
                         "titleFont": "Amiko",
                         "labelFont": "Amiko"
                     },
-                    "scale": {"domain": [65, 75]}
+                    "scale": {"domain": [65, 85]}
                     
                 },
                 "color": {
